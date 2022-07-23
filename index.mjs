@@ -9,7 +9,13 @@ console.log('Hello, Alice and Bobs!')
 
 console.log('launching... Dapp');
 const ctcAlice = accAlice.contract(backend);
-console.log(`Alice deployed the contract ${accAlice}`)
+
+/* const after = await getBalance();
+console.log(`Your balance is now ${after}`); */
+
+// const addrss = a.push(acc.getAddress());
+
+console.log('Alice deployed the contract')
 
 console.log('Starting backend .....');
 
@@ -26,8 +32,11 @@ const startBobs = async () => {
     await newBob('Bob1');
     await newBob('Bob2');
     await newBob('Bob3');
+    // await newBob('Bob4');
+    // await newBob('Bob5');
+
     while(!done){
-        await stdlib.wait(1);
+        await stdlib.wait(2);
 
     }
     
